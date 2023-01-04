@@ -1,0 +1,455 @@
+/* Voreinstellung */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border:#2D3845 0.1px solid; */
+}
+
+html {
+  font-size: 100%;
+   
+  width: 90%; /* Hier auf 100 stellen in der Mobilen Ansicht*/
+  margin: 0 auto;
+}
+
+body {
+ 
+  letter-spacing: 0.07rem;
+  
+
+  height:200px; /* Test kann später raus*/
+}
+
+header {
+  
+  
+}
+
+main {
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  /* background-color: bisque; */
+  
+}
+
+h2 {
+  font-family: sans-serif;
+  font-weight: bold;
+
+  color: #2D3845;    
+}
+
+img {
+  width: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*Navigation Standartansicht*/
+
+
+#navStandart {
+  display: flex; 
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#navName{
+  font-family: sans-serif;
+  flex: 1;
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+ 
+}
+
+#nav-right {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  
+}
+
+#nav-right a{
+  color: #515D6E
+}
+
+
+#navName:hover {
+  color: #009b8d;
+}
+
+#nav-mobile-right a img:active {
+  background-color:#009b8d
+}
+
+/*Navigation Mobile*/
+
+
+
+#nav-mobil-box {
+  display: none;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#nav-mobile-right {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;  
+}
+
+#nav-mobile-right a{
+  color: #515D6E;
+
+}
+
+#nav-mobile-right a img{
+  width: 30px;
+}
+
+
+/* Begrüßungs Section*/
+
+#begrüßung {
+  display:flex;
+  flex-direction: column;
+  align-items: center ;
+  justify-content: center;
+  align-content: center;
+  letter-spacing: .1rem; 
+
+  padding: 0px 0 0px 0;
+
+ 
+
+  
+}
+
+#hallo{
+  align-self: start;
+  font-size: 1.5rem;
+  color:#009b8d;
+  margin: 9rem 9rem 3rem 3rem;
+}
+
+#bname {
+  font-size: 4.375rem;
+  color:#2D3845;
+  margin: 0rem 0rem 3rem 0rem;
+}
+
+#bwas {
+  font-size: 4.375rem;
+  color: #515D6E;
+  margin: 0rem 0rem 1.5rem 0rem;
+}
+
+#btext{
+  margin: 0px 0 3rem 0;
+  
+}
+
+#btext p{
+  font-size: 1rem;
+  color: #515D6E;
+}
+
+
+.retro-btn {
+  background-color: white;
+  transition: all .5s;
+  padding: 18px 30px;
+  color: #009b8d;
+  border: 1px solid #009b8d;
+  border-radius: 6px;
+  
+  margin-bottom: 9rem;
+}
+
+.retro-btn:hover {
+  transition: all .5s;
+  background-color: #009b8d;
+  color: white;
+  
+}
+
+
+/* Über mich Section*/
+
+
+#überMich {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  margin: 0rem auto 0 auto;
+  padding: 0rem 0 0rem 0;
+}
+
+#überM{
+  margin: 9rem 0 3rem 0;
+}
+
+#mich-bild{
+  margin: 0 0 3rem 0;
+  width: 40%;
+  max-width: 300px;
+}
+
+#überMich p{
+  width: 50%;
+  max-width: 500px;
+  margin-bottom: 9rem;
+}
+
+
+
+#content p {
+  font-size: 1rem;
+  font-weight: 469;
+  color: #515D6E;
+}
+
+#bild {
+  width: 27%;
+}
+
+/* Fähigkeiten*/
+#fähigkeiten {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 351px;
+}
+
+#h2_fähigkeiten {
+  padding: 0px 0px 0px 0px;
+  margin-bottom: 3rem;
+
+}
+#technologien {
+   /* margin-top: opx; */
+   display: flex;
+   width: 100%;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   /* margin-bottom: 16px; */
+   /* padding: 0px 0px 100px 0px; */
+}
+
+#technologien .icon {
+   min-width: 45px;
+   padding: 2rem;
+   /* margin-left: 32px; */
+}
+
+
+
+/* Projekt Section*/
+
+
+#projekte {
+  /* padding-top: 100px; */
+  /* padding-bottom: 100px; */
+  text-align: center;
+  /* width: 80%; */
+  margin: 0 auto;
+ 
+}
+
+#titel {
+  margin-bottom: 5rem;
+
+
+}
+
+#projekte .projekt {
+  display: flex;
+  justify-content: center;
+  
+  margin: 20px auto; 
+}
+
+#beschreibung {
+  text-align: left;
+  padding: 0 0 3rem 0;
+}
+
+#beschreibung h3 {
+  color: #515D6E;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+#beschreibung p {
+  color: #515D6E;
+}
+
+#projektBild {
+  width: 64px;
+  margin-right: 64px;
+}
+
+.projekt_titel {
+  margin: 0px 0px 16px 0px;
+
+}
+
+#beschreibung p {
+  margin-bottom: 0px;
+  position: relative;
+  top: -5px;
+}
+
+.pro_icon {
+  position: relative;
+  bottom: -5px;
+}
+
+
+
+/* Kontakt Seite*/
+
+#contact {
+    margin-top: 150px;
+    padding: 0px 0px 50px.0px;
+}
+#contact h2{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#contact p {
+    margin-left: 16px;
+    text-align: center;
+    color: #515D6E;
+    font-weight: bold;
+}
+
+#icon-Kontainer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.c-icons {
+    width: 30px;
+    padding: 25px;   
+}
+
+
+/* Footer Section */
+
+footer {
+    width: 100%;
+    margin: 50px 0px 20px 0px;
+    text-align: center;
+
+}
+
+#name2 {
+    font-size:0.875rem;
+    color: #515D6E;
+    
+}
+
+#name2:hover {
+    color: #009b8d;
+}
+
+
+
+
+
+
+/*Responisve Nav-Standart*/
+
+@media only screen and (max-width:820px) {
+  /* Nav-Standart*/
+  
+  #navStandart {
+      display: none;
+  }
+  
+  #nav-mobil-box {
+      display: flex;
+  }
+
+  /*Responisve Banner*/
+
+  #begrüßung {
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  /* Übermich Section*/
+  #überMich p{
+    width: 100%;
+  }
+
+  /*Projekte Serction*/
+  #projekte .projekt {
+    flex-direction: column;
+    
+ }
+
+  #beschreibung {
+    margin: 0 auto;
+    text-align: center;
+ }
+
+ #projektBild {
+  width: 68px;
+  margin-right: 0px;
+  margin-bottom: 1.5rem;
+}
+}
+ 
+@media only screen and (max-width:680) {
+  #beschreibung {
+    width: 90%;
+   }
+  
+}
+
+@media only screen and (max-width:620px) {
+  /* Banner*/
+  html {
+      font-size: 80%;
+  }
+  /* Übermich Section*/
+  #überMich p{
+    max-width: 70%;
+  }
+
+/*Projekte Serction*/
+
+  #beschreibung {
+    width: 90%;
+   }
+
+ }
+
+ @media only screen and (max-width:490px) {
+  html {
+      font-size: 65%;
+  }
+
+  /* Übermich Section*/
+  #überMich p{
+    max-width: 90%;
+  }
+
+}
